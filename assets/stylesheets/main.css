@@ -15,15 +15,6 @@ article {
     vertical-align: baseline;
 }
 
-h2 {
-    color: #f42;
-    font-weight: 700;
-    line-height: 1.1;
-    font-family: Avalon,sans-serif;
-    font-size: 28px;
-    letter-spacing: -.015em;
-}
-
 h3 {
     color: #f42;
     font-weight: 700;
@@ -46,23 +37,11 @@ h5 {
     font-size: 14px;
 }
 
-a {
-    color: #f42;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #000;
-}
-
 ul {
     list-style: none;
 }
 
 main {
-    transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
-    transition: transform .5s ease,-webkit-transform .5s ease;
     padding-top: 48px;
     position: relative;
     z-index: 2;
@@ -198,9 +177,6 @@ b {
 }
 
 .nav-toggle a {
-    transition: -webkit-transform .4s;
-    transition: transform .4s;
-    transition: transform .4s,-webkit-transform .4s;
     opacity: 1!important;
     position: relative;
     z-index: 998;
@@ -328,93 +304,152 @@ b {
     background-position: -160px -160px;
 }
 
-.cover-content span .icon-share {
-    background-position: -912px -912px;
-}
-
 .article-gradient-black {
-    transition: background-color .4s ease;
-    background: rgba(0,0,0,.25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
-    background-size: 100% 100%;
-    display: block;
-    will-change: background-color;
-    z-index: 2;
-    height: 100%;
-    width: 100%;
+  background: rgba(0,0,0,.25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  will-change: background-color;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
 }
 
-.news-wrapper, .footer-wrapper {
-    margin: 0 auto;
-    max-width: 1192px;
-    padding: 0 20px;
+.news-wrapper,
+.footer-wrapper {
+  margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
+}
+
+.latest-news {
+  width: 100%;
+  height: inherit;
+  margin: 20px 0;
+}
+
+.fund-news h2,
+.latest-news h2,
+.latest-deals {
+  padding: 20px 0;
+  color: #ff3300;
+}
+
+.l-news {
+  width: 23%;
+  height: 200px;
+  display: inline-grid;
+  margin: 5px;
+}
+
+.l-news .img-container {
+  width: 100%;
+  height: 130px;
+}
+
+.l-news .img-container img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.l-deals {
+  width: 23%;
+  height: 250px;
+  display: inline-grid;
+  margin: 5px;
+}
+
+.l-deals .img-container {
+  width: 100%;
+  height: 200px;
+}
+
+.l-deals .img-container img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.fund-news {
+  width: 100%;
+  height: inherit;
+  margin: 50px 0;
+}
+
+.f-news {
+  width: 23%;
+  height: 200px;
+  display: inline-grid;
+  margin: 5px;
+}
+
+.f-news .container {
+  width: 100%;
+  height: 100px;
+  background: #ff3300;
 }
 
 .news-sections {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex: 0 1 auto;
-    flex: 0 1 auto;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    margin: -8px;
-    margin-bottom: 40px;
+  width: 100%;
+  height: inherit;
 }
 
 .news-section {
-    -webkit-flex-basis: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-    -webkit-flex: 0 0 auto;
-    flex: 0 0 auto;
-    padding: 8px;
-    position: relative;
+  width: 33%;
+  display: inline-grid;
+  padding: 2px;
+  position: relative;
 }
 
 .news-section h2 {
-    margin-bottom: 14px;
+  width: 100%;
+  height: 60px;
+  position: relative;
 }
-/*#endregion News sections*/
 
-/*#region Popular article*/
+.news-section h2 a {
+  color: red;
+  text-decoration: none;
+}
+
 .article-popular {
-    height: 0;
-    padding-top: 75%;
-    position: relative;
-    width: 100%;
+  height: 300px;
+  position: relative;
+  width: 100%;
 }
 
 .article-pic img {
-    background-color: #000;
-    background-size: cover;
-    background-position: 50%;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
 }
 
 .article-popular-gradient {
-    background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
-    background-size: 100% 100%;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
+  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
+  background-size: 100% 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .article-popular header {
-    bottom: 0;
-    left: 0;
-    padding: 14px;
-    position: absolute;
-    right: 0;
-    z-index: 3;
+  bottom: 0;
+  left: 0;
+  padding: 14px;
+  position: absolute;
+  right: 0;
+  z-index: 3;
 }
 
 .article-popular h5 {
@@ -457,9 +492,7 @@ b {
 .article-popular li:last-child::after {
     display: none;
 }
-/*#endregion Popular article*/
 
-/*#region Latest article*/
 .article-latest {
     display: -webkit-flex;
     display: flex;
