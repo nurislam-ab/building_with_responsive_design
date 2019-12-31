@@ -341,6 +341,25 @@ b {
   margin: 5px;
 }
 
+.l-news a {
+    color: black;
+    text-decoration: none;
+}
+
+.l-deals a {
+    color: black;
+    text-decoration: none;
+}
+
+.f-news a {
+    color: black;
+    text-decoration: none;
+}
+
+.l-news a:hover, .l-deals a:hover {
+    color: red;
+}
+
 .l-news .img-container {
   width: 100%;
   height: 130px;
@@ -374,13 +393,22 @@ b {
   width: 100%;
   height: inherit;
   margin: 50px 0;
+  font-size: 13px;
+}
+
+.f-news .fas, .far {
+    background: none;
 }
 
 .f-news {
   width: 23%;
-  height: 200px;
+  height: 300px;
   display: inline-grid;
   margin: 5px;
+}
+
+.f-news hr {
+    border: solid thin red;
 }
 
 .f-news .container {
@@ -539,9 +567,7 @@ b {
     width:100%;
     height:100%;
 }
-/*#endregion*/
 
-/*#region Article list items*/
 .article-list-item {
     border-bottom: 1px solid #eee;
 }
@@ -574,9 +600,7 @@ b {
     top: 13px;
     width: 4px;
 }
-/*#endregion Article list items*/
 
-/*#region Footer*/
 .footer-links {
     background: #131313;
     padding: 2.5em 0;
@@ -758,9 +782,6 @@ b {
         padding: 18px 10px 0;
     }
 
-    .news-sections {
-        margin: -10px;
-    }
 
     .news-section {
         margin-bottom: 24px;
@@ -876,20 +897,36 @@ b {
         padding-right: 20px;
     }
 
-    .news-sections {
-        margin: -12px;
-    }
-
-    .news-section {
-        -webkit-flex-basis: 33.3333333333%;
-        flex-basis: 33.3333333333%;
-        max-width: 33.3333333333%;
-    }
+   
 }
 
 @media (min-width: 1280px) {
     .cover-content header {
         padding: 20px 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .menu ul li a {
+        padding: 0;
+    }
+
+    .l-news {
+        width: 31%;
+        margin: 5px;
+    }
+
+    .f-news {
+        width: 31%;
+        margin: 5px;
+    }
+
+    .l-deals {
+        width: 31%;
+        margin: 5px;
+    }
+    .news-section {
+        width: 48%;
     }
 }
 
@@ -936,10 +973,91 @@ b {
         width: 96px;
         height: 96px;
     }
-}
 
-@media (max-width: 1024px) {
-    .menu ul li a {
-        padding: 0;
+    .l-news {
+        width: 100%;
+        height: 90px;
+        display: inline-flex;
+        margin: 0;
     }
+
+      .latest-news p {
+          padding: 0;
+          margin: 0;
+      }
+      
+      .l-news .img-container {
+        width: 100px;
+        height: 70px;
+      }
+
+      .l-news .text {
+        width: inherit;
+        height: 90px;
+        margin: 0 15px 0 15px;
+      }
+      
+      .l-news .img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      
+      .l-deals {
+        width: 100%;
+        height: 70px;
+        display: inline-flex;
+        margin: 5px;
+      }
+      
+      .l-deals .img-container {
+        width: 100px;
+        height: 70px;
+      }
+      
+      .l-deals .img-container img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .l-deals .text {
+        width: inherit;
+        height: 90px;
+        margin: 0 15px 0 15px;
+      }
+      
+      .fund-news {
+        width: 100%;
+        height: inherit;
+        margin: 50px 0;
+        font-size: 12px;
+      }
+      
+      .f-news {
+        width: 100%;
+        height: 300px;
+        display: inline-grid;
+        margin: 5px;
+      }
+      
+      .f-news .container {
+        width: 100%;
+        height: 100px;
+        background: #ff3300;
+      }
+      
+      .news-sections {
+        width: 100%;
+        height: inherit;
+      }
+      
+      .news-section {
+        width: 100%;
+        display: inline-grid;
+        padding: 2px;
+        position: relative;
+      }
+      
 }
